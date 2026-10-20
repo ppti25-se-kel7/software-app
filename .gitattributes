@@ -1,0 +1,5 @@
+# Keep LF everywhere so Biome and the husky hooks behave the same on Windows, macOS and Linux.
+* text=auto eol=lf
+*.png binary
+*.jpg binary
+*.ico binary

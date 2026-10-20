@@ -1,0 +1,30 @@
+name: Tugas
+description: Tugas mingguan atau pekerjaan fitur/komponen
+labels: ["task"]
+body:
+  - type: input
+    id: week
+    attributes:
+      label: Minggu ke-
+      placeholder: "3"
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: Deskripsi
+      description: Apa yang harus dikerjakan.
+    validations:
+      required: true
+  - type: input
+    id: figma
+    attributes:
+      label: Link Figma
+      placeholder: https://www.figma.com/...
+  - type: textarea
+    id: done
+    attributes:
+      label: Kriteria selesai
+      placeholder: |
+        - [ ] Komponen sesuai Figma
+        - [ ] Ada story

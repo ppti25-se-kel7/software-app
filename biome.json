@@ -24,6 +24,29 @@
       "react": "recommended"
     }
   },
+  "overrides": [
+    {
+      "includes": ["src/app/**", "src/features/**"],
+      "linter": {
+        "rules": {
+          "style": {
+            "noRestrictedImports": {
+              "level": "error",
+              "options": {
+                "paths": {
+                  "@mui/material/Button": "Pakai Button dari '@/components/atoms/button'.",
+                  "@mui/material": {
+                    "importNames": ["Button"],
+                    "message": "Pakai Button dari '@/components/atoms/button'."
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  ],
   "assist": {
     "actions": {
       "source": {

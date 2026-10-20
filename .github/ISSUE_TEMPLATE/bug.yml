@@ -1,0 +1,23 @@
+name: Bug
+description: Laporkan sesuatu yang tidak berjalan semestinya
+labels: ["bug"]
+body:
+  - type: textarea
+    id: what
+    attributes:
+      label: Apa yang terjadi
+    validations:
+      required: true
+  - type: textarea
+    id: steps
+    attributes:
+      label: Langkah untuk mereproduksi
+      placeholder: |
+        1. Buka halaman ...
+        2. Klik ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Yang seharusnya terjadi
