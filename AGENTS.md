@@ -69,6 +69,7 @@ src/
 
 - Jangan push langsung ke `main`. Buat branch dari `main` terbaru:
   `feat/<nama>-<topik>`, `fix/<nama>-<topik>`, `docs/...`, `chore/...`
+  dengan `<nama>` salah satu dari: `mamat`, `kay`, `nopal`, `martin`, `nona` (contoh: `feat/kay-login-form`)
 - Pesan commit wajib Conventional Commits (dicek otomatis): `feat(button): add loading state`
 - Satu PR = satu tugas/issue. PR kecil lebih cepat di-review.
 - Sebelum PR, jalankan: `npm run lint`, `npm run typecheck`, `npm test`.
